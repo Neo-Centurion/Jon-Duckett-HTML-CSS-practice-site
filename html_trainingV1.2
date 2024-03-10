@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Practice Project-MACINTOSH-05/03/24</title>
+		<!-- Within the head I can use a style sheet if i dont have an external one. -->
+		<style>
+			h1 {color:black;}
+			p {color:black;}
+		</style>
+		<!-- This style sheet below will overrite the above one -->
+		<style>
+			h1 {color:black;}
+			p {color:black}
+		</style>
+		<!-- the base tag is a default URL target for all links on the page -->
+		<!-- Its good for error handling in my oppinion -->
+		<!-- NOTE: It doesnt have a closing tag -->
+		<!--<base href="https://www.w3schools.com/" target="_blank">-->
+		<!-- This link takes us to w3schools website, below marked TESTW3 will display this -->
+	</head>
+
+	<body>
+
+	<!-- Test comment -->
+	<!-- note: every page should only have 1 h1 header on it-->
+	<!-- the main content should be sectioned off from the head and footer-->
+		<header>
+			<h1>This is my HTML & CSS test website</h1>
+			<h3>Note to all readers:</h3>
+			<p>I will be using this as a way to show everything I've learned in HTML and CSS. Using the inspect feature on your browser, you can view all of the code used on this page. Or use this <a href="https://github.com/Neo-Centurion/Jon-Duckett-HTML-CSS-practice-site" target="_blank">link to my github repository</a>. At the bottom of this page are the books I've used. This document uses the current HTML5 and CSS3</p>
+			<hr />
+		</header>
+
+	<main>
+		
+		<section id="standardformatlink">
+			<h3>The standard HTML page format</h3>
+			<p>Every page has a standard format hidden behind the many lines of code. Heres a good one to use thats versatile, The link below will take you to a repository where you can copy and paste it or download it for use.</p>
+			
+			<a href="https://github.com/Neo-Centurion/HTML_Template" target="_blank">HTML format</a>
+			<hr />
+			
+		</section>
+
+		<section id="declarations">
+			<h3>Types of declaration</h3>
+			<br />
+			<h4>Strong, B, Em & I Tags</h4>
+			<!-- types of text declarations -->
+			<p><strong>Beware</strong>: There be <em>ethereal dragons</em> in these parts</p>
+			<p>Strong tags make content bold but hold more meaning than b tags.</p>
+			<p>Em tags make content italic but hold more meaning than i tags.</p>
+			<p>Throughout HTML there are many tags that result in similar effects, however their value is different by semantic rules.</p>
+			<p>This is <b>Bold</b>, This is <i>Italic</i>, using the b and i tags</p>
+			<p>Numbers have suffixes such as three squared or 3<sup>2</sup> and subscripts such as carbon dioxide or CO<sub>2</sub></p>
+			<p>The sup tag raises something, while the sub tag lowers.</p>
+			<hr />
+		</section>
+
+		<section id="quotations">
+			<h3>Quotations and Citations</h3>
+			<br />
+			<h4>Blockquote & Q Tag</h4>
+
+			<p>Below is an example from the HTML & CSS book by Jon 
+			Duckett on block quotations.</p>
+			<!--Block quotes require a citation tag-->
+			<blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">Did you ever stop to think, and forget to start again?</blockquote>
+			<p>This quote requires a cite attribute within the blockquote tag.</p>
+			
+			<p><q>A standard version of a quotation is this<q>. Internet explorer doesnt use this q tag properly so block quote is preffered for making quotes.</p>
+			<!-- standard quote tag is <q>-->
+			<p>As seen above, the quotations do not function well using the q tag.</p>
+			<p><q>It works better if the quote is its own paragraph or within its own p tag.</q></p>
+
+			<h4>Abbr Tag</h4>
+	
+			<p>Abbreviations using the abbr tag is another form of citation in text. Hover over the text with the dotted underline and wait 1 seccond to see the abbreviated meaning</p>
+			<!-- abbreviations pop ups require a title tag within the abbr tag-->
+			<p><abbr title="Doctor">Dr.</abbr>Brohemious Tony studied at the <abbr title="National Broccoli Association">NBA</abbr>. Abbreviations should only be used for excessively long titles or accronyms.</p>
+
+			<p>Abbr tags require the title attribute to give meaning to the abbreviation.</p>
+			<!-- currently editing past this point-->
+			<h4>Cite and DFN tag</h4>
+
+			<p><cite>A brief history in time</cite> is a book by Stephen Hawking, the guy famous for being on <em>Epsteins Island</em></p>
+			<p>As seen in this Paragraph, cite and em act in a similar way, however cite is a more meaningful in a semantic way.</p>
+			<p>Stephen Hawking used be famous for his studies on <dfn>Black Holes</dfn> and <dfn>Dark Matter</dfn>. These are technical terms covered by the dfn tag only the first time they appear. <abbr title="defining instance">DFN</abbr> stands for defining instance</p>
+
+			<h4>Address Tag</h4>
+
+			<p>Address tag is used to list the details of a page author. Below is an example</p>
+			<address>
+				<p><a href="mailto:homer@example.org">homer@example.org</a></p>
+				<p>742 Evergreen Terrace. Springfield.</p>
+			</address>
+			<br />
+			<hr />
+			<!-- address tags will display content in hyperlinks-->
+		</section>
+		<section>
+			<h3>Content Changes</h3>
+			<p>ins, del, and s</p>
+			<p> if I want to delete and insert a word into a paragraph, i can use the del tag around the word im removing and the ins tag with a new word between the open and close ins tag to insert a new word.
+			<p>This has got do be the <del>worst</del> <ins>GREATEST AND TOTALLY NOT WORST</ins> tag ever made</p>
+			<!-- del will cross out the old word on the page-->
+			<!-- ins will underline new content inserted-->
+
+			<br />
+			<hr />
+			<p>s tag indicates something that is no longer accurate or relevent but shouldnt be deleted. <s>crosses out content without the need to insert after it</s></p>
+		</section>
+			<!-- this next section goes over lists -->
+		<section>
+			
+
+
+
+
+
+		</section>
+	</main>
+	<!--TESTW3 Will revisit later on-->
+		<!--<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+		<a href="tags/tag_base.asp">HTML base Tag</a>-->
+	<footer>
+		
+
+
+
+	</footer>
+
+
+
+	</body>
+
+</html>
