@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Practice Project-MACINTOSH-05/03/24</title>
+		<!-- Within the head I can use a style sheet if i dont have an external one. -->
+		<style>
+			h1 {color:black;}
+			p {color:black;}
+		</style>
+		<!-- This style sheet below will overrite the above one -->
+		<style>
+			h1 {color:black;}
+			p {color:black}
+		</style>
+		<!-- the base tag is a default URL target for all links on the page -->
+		<!-- Its good for error handling in my oppinion -->
+		<!-- NOTE: It doesnt have a closing tag -->
+		<!--<base href="https://www.w3schools.com/" target="_blank">-->
+		<!-- This link takes us to w3schools website, below marked TESTW3 will display this -->
+	</head>
+
+	<body>
+
+	<!-- Test comment -->
+	<!-- note: every page should only have 1 h1 header on it-->
+	<!-- the main content should be sectioned off from the head and footer-->
+		<header>
+			<h1>HTML & CSS Learners Guide</h1>
+			<h2>Written by Neo_Centurion - 2024</h2>
+			<h3>Note to all readers:</h3>
+			<p>I will be using this as a way to show everything I've learned in HTML and CSS. Using the inspect feature on your browser, you can view all of the code used on this page. Or use this <a href="https://github.com/Neo-Centurion/Jon-Duckett-HTML-CSS-practice-site" target="_blank">link to my github repository</a>. At the bottom of this page are the books I've used. This document uses the current HTML5 and CSS3</p>
+			<hr />
+		</header>
+
+	<main>
+		
+		<section id="standardformatlink">
+			<h3>The standard HTML page format</h3>
+			<p>Every page has a standard format hidden behind the many lines of code. Heres a good one to use thats versatile, The link below will take you to a repository where you can copy and paste it or download it for use.</p>
+			
+			<a href="https://github.com/Neo-Centurion/HTML_Template" target="_blank">HTML format</a>
+			<hr />
+			
+		</section>
+
+		<section id="declarations">
+			<h3>Types of declaration</h3>
+			
+			<h4>Strong, B, Em & I Tags</h4>
+			<!-- types of text declarations -->
+			<p><strong>Beware</strong>: There be <em>ethereal dragons</em> in these parts</p>
+			<p>Strong tags make content bold but hold more meaning than b tags.</p>
+			<p>Em tags make content italic but hold more meaning than i tags.</p>
+			<p>Throughout HTML there are many tags that result in similar effects, however their value is different by semantic rules.</p>
+			<p>This is <b>Bold</b>, This is <i>Italic</i>, using the b and i tags</p>
+			<p>Numbers have suffixes such as three squared or 3<sup>2</sup> and subscripts such as carbon dioxide or CO<sub>2</sub></p>
+			<p>The sup tag raises something, while the sub tag lowers.</p>
+			<hr />
+		</section>
+
+		<section id="quotations">
+			<h3>Quotations and Citations</h3>
+			
+			<h4>Blockquote & Q Tag</h4>
+
+			<p>Below is an example from the HTML & CSS book by Jon 
+			Duckett on block quotations.</p>
+			<!--Block quotes require a citation tag-->
+			<blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">Did you ever stop to think, and forget to start again?</blockquote>
+			<p>This quote requires a cite attribute within the blockquote tag.</p>
+			
+			<p><q>A standard version of a quotation is this<q>. Internet explorer doesnt use this q tag properly so block quote is preffered for making quotes.</p>
+			<!-- standard quote tag is <q>-->
+			<p>As seen above, the quotations do not function well using the q tag.</p>
+			<p><q>It works better if the quote is its own paragraph or within its own p tag.</q></p>
+
+			<h4>Abbr Tag</h4>
+	
+			<p>Abbreviations using the abbr tag is another form of citation in text. Hover over the text with the dotted underline and wait 1 seccond to see the abbreviated meaning</p>
+			<!-- abbreviations pop ups require a title tag within the abbr tag-->
+			<p><abbr title="Doctor">Dr.</abbr>Brohemious Tony studied at the <abbr title="National Broccoli Association">NBA</abbr>. Abbreviations should only be used for excessively long titles or accronyms.</p>
+
+			<p>Abbr tags require the title attribute to give meaning to the abbreviation.</p>
+			<!-- currently editing past this point-->
+			<h4>Cite and DFN tag</h4>
+
+			<p><cite>A brief history in time</cite> is a book by Stephen Hawking, the guy famous for being on <em>Epsteins Island</em></p>
+			<p>As seen in this Paragraph, cite and em act in a similar way, however cite is a more meaningful in a semantic way.</p>
+			<p>Stephen Hawking used be famous for his studies on <dfn>Black Holes</dfn> and <dfn>Dark Matter</dfn>. These are technical terms covered by the dfn tag only the first time they appear. <abbr title="defining instance">DFN</abbr> stands for defining instance</p>
+
+			<h4>Address Tag</h4>
+
+			<p>Address tag is used to list the details of a page author. Below is an example</p>
+			<address>
+				<p><a href="mailto:homer@example.org">homer@example.org</a></p>
+				<p>742 Evergreen Terrace. Springfield.</p>
+			</address>
+			<hr />
+			<!-- address tags will display content in hyperlinks-->
+		</section>
+		<section id="contentchanges">
+			<h3>Content Changes</h3>
+			<p>ins, del, and s</p>
+			<p> if I want to delete and insert a word into a paragraph, i can use the del tag around the word im removing and the ins tag with a new word between the open and close ins tag to insert a new word.
+			<p>This has got do be the <del>worst</del> <ins>GREATEST AND TOTALLY NOT WORST</ins> tag ever made</p>
+			<!-- del will cross out the old word on the page-->
+			<!-- ins will underline new content inserted-->
+			<p>s tag indicates something that is no longer accurate or relevent but shouldnt be deleted. <s>crosses out content without the need to insert after it</s></p>
+			<hr />
+		</section>
+			<!-- this next section goes over lists -->
+		<section id="lists">
+			<h3>Lists</h3>
+
+			<h4>Ordered Lists and Unordered Lists</h4>
+
+			<p>Ordered lists display content in a numbered order such as the example below.</p>
+			<ol>
+				<li>dog</li>
+				<li>chicken</li>
+				<li>your mom</li>
+			</ol>
+			<p>An ordered list requires the ol tag and li tags within to contain items.</p>
+			<p>A list without numbers will follow the same process as an ordered list, except using the ul tag instead of the ol.</p>
+			<ul>
+				<li>ruff</li>
+				<li>bawk</li>
+				<li>crack</li>
+			</ul>
+
+			<h4>Definition Lists and Nested Lists</h4>
+
+			<p>Definitions use 3 different tags, dl (definition list) which contains dt (definition term) which is explained directly below by dd (definition). </p>
+			<dl>
+				<dt>dog</dt>
+				<dd>dog go ruff</dd>
+
+				<dt>bawk</dt>
+				<dd>a chicken sound</dd>
+
+				<dt>your mom</dt>
+				<dd>can make the shoe go crack on your head</dd>
+			</dl>
+			<h4>Nested Lists</h4>
+			<p>Lists can be made within lists</p>
+			<ul>
+				<li>Vegetables</li>
+				<ol>
+					<li>Cucumber</li>
+					<li>Lettuce</li>
+					<li>Cabbage</li>
+				</ol>
+				<li>Fruits</li>
+				<ol>
+					<li>Apple</li>
+					<li>Strawberry</li>
+					<li>Blueberry</li>
+				</ol>
+			</ul>
+			<hr />
+			
+		<section id="links">
+			<h3>Links / Hyperlinks</h3>
+
+			<p>Links allow us to travel between places within and outside a page.</p>
+			<p>Using the a tag we can make some text we want to be our clickable link text.</p>
+			<p>Within the a tag created, use the href attribute which requires a full URL to act as our link.</p>
+
+			<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+
+			<p>URL stands for Uniform Resource Locator.</p>
+			<p>Many pages have same site navigation at the top of their page. These pages are individual html files all in the same folder.</p>
+			<a href="PageExample.html">Example Page</a>
+
+			<p>Larger websites are sorted by section into separate pages.</p>
+			<p>For ease of set up, many of these pages are set up with a template for easy replication and editing.</p>
+			<!---NOTE: This entire project will eventually be sorted into various, easy to digest page sections and fleshed out further for better description with photo examples to help new people usuing HTML, CSS, and Javascript. That is one of the end goals to this project. -->
+
+			<h4>Email Links and mailto:</h4>
+
+			<p>Within the href attribute you can link an email, be sure to add "mailto:" before the email is placed, like "mailto:ServiceDesk@example.org"</p>
+
+			<a href="mailto:ServiceDesk@example.org">Service Desk Email</a>
+
+			<p>mailto: serves as the gateway to the email address</p>
+
+			<h4>Target attribute</h4>
+
+			<p>Some links can open a new tab or have effects similar to that.</p>
+			<p>As seen above we have a link to youtube that opens in a new tab. That is because after the href attribute leading to the URL of youtube, we have another attribute; target. Target is set to = "_blank" for opening a new tab when transfering to a new URL.<p>
+
+			<p>Here is a link that doesnt open a new tab when triggered, this is because it doesnt have a target attribute set to _blank</p>
+			<a href="https://images.google.com/">Google Images</a>
+			<p>It is considered good practice to let users know when a link will open in a new window before they click on it. I personally disagree with this, prefering links to open in a new window as in some cases progress on a site can be lost if changing to a new site or page. Therefor all links on this page will open in a new window.</p>
+
+			<h4>Linking To Ids</h4>
+
+
+
+
+
+
+		</section>
+
+
+
+
+		</section>
+	</main>
+	<!--TESTW3 Will revisit later on-->
+		<!--<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+		<a href="tags/tag_base.asp">HTML base Tag</a>-->
+	<footer>
+		
+
+
+
+	</footer>
+
+
+
+	</body>
+
+</html>
